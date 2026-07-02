@@ -22,17 +22,14 @@ Aplikasi manajemen tugas dan jadwal harian (To-Do List) berbasis Flutter yang di
 ---
 
 ## 📁 Struktur Folder Proyek
-```text
-lib/
-├── models/
-│   └── task_model.dart            # Struktur data dan parser JSON dari REST API
-├── controllers/
-│   └── task_controller.dart       # Pengatur logika bisnis & State Management Provider
-├── services/
-│   ├── storage_service.dart       # Enkapsulasi fitur Shared Preferences (Local Storage)
-│   └── notification_service.dart  # Enkapsulasi fitur Local Notification (Native Feature)
-└── views/
-    ├── main.dart                  # Pintu masuk utama & inisialisasi sistem
-    ├── login_page.dart            # Antarmuka Halaman Login
-    ├── home_page.dart             # Antarmuka Menu Utama (Daftar Tugas)
-    └── task_page.dart             # Antarmuka Fitur Utama (Tambah List)
+
+* **lib/** `Pusat kode sumber utama`
+  * ↳ **controllers/** — *State Management & Logika Bisnis*
+    * `task_controller.dart` — Integrasi API & pemicu notifikasi
+  * ↳ **models/** — *Arsitektur Data*
+    * `task_model.dart` — Parser JSON mentah dari server
+  * ↳ **services/** — *Fitur Perangkat Native & Lokal*
+    * `notification_service.dart` — Pengelola Local Notification
+    * `storage_service.dart` — Pengelola Shared Preferences (Login)
+  * ↳ **views/** — *Antarmuka UI/UX (Figma Implementation)*
+    * `main.dart` • `login_page.dart` • `home_page.dart` • `task_page.dart`
