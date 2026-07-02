@@ -33,3 +33,12 @@ Aplikasi manajemen tugas dan jadwal harian (To-Do List) berbasis Flutter yang di
     * `storage_service.dart` — Pengelola Shared Preferences (Login)
   * ↳ **views/** — *Antarmuka UI/UX (Figma Implementation)*
     * `main.dart` • `login_page.dart` • `home_page.dart` • `task_page.dart`
+   
+ ---
+
+## 📸 Dokumentasi & Hasil Implementasi Aplikasi
+
+Berikut adalah bukti visual fungsionalitas aplikasi yang dijalankan melalui simulator:
+
+<img width="326" height="89" alt="Screenshot 2026-07-02 195635" src="https://github.com/user-attachments/assets/dc2e08a8-e01a-476a-a722-eba8d35d44f5" />
+
